@@ -1,5 +1,6 @@
 # Wisowls
 Section Time: 2:00 PM
+
 Dog owner matching app
 
 ## Members
