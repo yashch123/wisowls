@@ -1,24 +1,24 @@
-# README
+# Wisowls
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Members
 
-Things you may want to cover:
+### Shabnam Bahmanyar
+Github: sh1994b
 
-* Ruby version
+### Michelle Duan
+Github: michelleduan
 
-* System dependencies
+### Nina Maller
+- ninamaller
 
-* Configuration
+### Wai Yan (Will) Htun
+- willhtun
 
-* Database creation
+Section Time
+2 PM
 
-* Database initialization
+About the Project
 
-* How to run the test suite
+Dog owner discovery app
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
