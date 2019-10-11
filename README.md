@@ -1,24 +1,17 @@
 # Wisowls
+Section Time: 2:00 PM
+Dog owner matching app
 
-Members
+## Members
 
-### Shabnam Bahmanyar
+#### Shabnam Bahmanyar
 Github: sh1994b
 
-### Michelle Duan
+#### Michelle Duan
 Github: michelleduan
 
-### Nina Maller
-- ninamaller
+#### Nina Maller
+Github: ninamaller
 
-### Wai Yan (Will) Htun
-- willhtun
-
-Section Time
-2 PM
-
-About the Project
-
-Dog owner discovery app
-
-
+#### Wai Yan (Will) Htun
+Github: willhtun
