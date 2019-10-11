@@ -1,7 +1,7 @@
 # Wisowls
 Section Time: 2:00 PM
 
-Dog owner matching app
+Matching app for dog owners. Owners can arrange activities like play-dates, dog-sitting, etc. The app will also recommend owners based on input preferences (e.g. "Dog is well-behaved around children").
 
 ## Members
 
