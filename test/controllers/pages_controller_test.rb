@@ -7,7 +7,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get register" do
-    get pages_register_url
+    get signup_path
     assert_response :success
   end
 

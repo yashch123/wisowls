@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/login'
   get 'pages/profile'
-  get 'pages/register'
+  get  '/signup',  to: 'users#new'
   resources :users
 end
