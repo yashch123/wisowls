@@ -22,10 +22,14 @@
           <%= f.password_field :password, class: 'font-valera field-input' %>
     
           <%= f.submit "Log in", class: "font-valera field-button" %>
-        <% end %>
+          <% end %>
     
-        <p>New user? <%= link_to "Sign up now!", signup_path %></p>
-
+          <div class="register-link font-valera">
+            NEW USER?
+            <%= link_to "SIGN UP", signup_path %>
+          </div>
+          
+          
         </div>
       </div>
     </div>
