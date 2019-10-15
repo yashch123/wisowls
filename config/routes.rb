@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'pages#home'
   get 'sessions/new'
   get 'pages/about'
   get 'pages/home'
