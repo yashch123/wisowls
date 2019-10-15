@@ -29,7 +29,7 @@ rails server
 Github: sh1994b
 
 #### Nina Maller  
-![Nina's Profile](members_photos/IMG_1920 3.jpg)  
+![Nina's Profile](members_photos/IMG_1920.jpg)  
 Github: ninamaller
 
 #### Wai Yan (Will) Htun
