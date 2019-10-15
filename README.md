@@ -29,9 +29,9 @@ rails server
 Github: sh1994b
 
 #### Nina Maller
-![Nina's Profile]('./members_photos/IMG_1920 3.jpg')
+![Nina's Profile](members_photos/IMG_1920 3.jpg)
 Github: ninamaller
 
 #### Wai Yan (Will) Htun
-![Will's Profile]('./members_photos/profile.jpeg')
+![Will's Profile](members_photos/profile.jpeg)
 Github: willhtun
