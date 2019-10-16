@@ -25,7 +25,7 @@ rails server
 ## Members
 
 #### Shabnam Bahmanyar
-![Shab's Profile](link-to-image)
+![Shab's Profile](members_photos/IMG_Shab.jpg)
 Github: sh1994b
 
 #### Nina Maller  
