@@ -13,6 +13,17 @@ button:focus {
     outline: none;
 }
 
+select:not([multiple]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-image: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1"><path d="M4 8L0 4h8z"/></svg>');
+    padding: .5em;
+    padding-right: 1.5em
+}
+
 .font-satisfy {
   font-family: 'Satisfy', cursive;
 }
@@ -23,6 +34,14 @@ button:focus {
 
 .background {
   background-image: url("https://i.imgur.com/Axjaj2H.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-blank {
+  background-image: url("https://i.imgur.com/D7tDHNi.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,6 +96,19 @@ button:focus {
   color: white;
 }
 
+.img-upload-btn {
+  width: 240px;
+  height: 40px;
+  border-style: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #4bc2e3;
+  color: white;
+  margin-top:20px;
+  text-align: center;
+}
+
 .register-link {
   width: 100%;
   text-align: center;
@@ -95,8 +127,30 @@ button:focus {
   margin: 0 auto;
 }
 
+.register-container-profile {
+  margin: 0 auto;
+  margin-top: 200px;
+}
+
 #register-subtitle {
   width: 100%;
   font-size: 20px;
   text-align: center;
 }
+
+.image-upload > input
+{
+   display: none;
+}
+
+.image-upload > label{
+  cursor:pointer;
+}
+
+.upload-profile-pic {
+  width: 240px;
+  height: 240px;
+  background-color: red;
+  border-radius: 25px;
+}
+

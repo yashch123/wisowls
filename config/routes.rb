@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'pages/home'
   get 'pages/login'
   get 'pages/profile'
+  get 'users/myprofile'
   get  '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
