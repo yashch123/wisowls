@@ -33,5 +33,5 @@ Github: sh1994b
 Github: ninamaller
 
 #### Wai Yan (Will) Htun
-![Will's Profile](members_photos/profile.jpg)  
+![Will's Profile](members_photos/will_profile.jpg)  
 Github: willhtun
