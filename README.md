@@ -25,13 +25,13 @@ rails server
 ## Members
 
 #### Shabnam Bahmanyar
-![Shab's Profilne](members_photos/IMG_Shab.jpg)  
+<img src="https://github.com/scalableinternetservices/wisowls/blob/master/members_photos/IMG_Shab.jpg" alt="alt text" width=30%>  
 Github: sh1994b
 
 #### Nina Maller  
-![Nina's Profile](members_photos/IMG_1920.jpg)  
+<img src="https://github.com/scalableinternetservices/wisowls/blob/master/members_photos/IMG_1920.jpg" alt="alt text" width=30%>  
 Github: ninamaller
 
 #### Wai Yan (Will) Htun
-![Will's Profile](members_photos/will_profile.jpg)  
+<img src="https://github.com/scalableinternetservices/wisowls/blob/master/members_photos/will_profile.jpg" alt="alt text" width=30%>  
 Github: willhtun
