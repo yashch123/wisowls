@@ -12,17 +12,17 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get profile" do
-    get pages_profile_url
+    get profile_path
     assert_response :success
   end
 
   test "should get home" do
-    get pages_home_url
+    get home_path
     assert_response :success
   end
 
   test "should get about" do
-    get pages_about_url
+    get about_path
     assert_response :success
   end
 
