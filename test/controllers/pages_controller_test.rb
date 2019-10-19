@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PagesControllerTest < ActionDispatch::IntegrationTest
   test "should get login" do
-    get pages_login_url
+    get login_path
     assert_response :success
   end
 
