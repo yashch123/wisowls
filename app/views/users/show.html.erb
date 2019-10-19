@@ -6,6 +6,10 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+        <%= form_with(url: logout_path, scope: :session, local: true, method: "delete") do |f| %>
+
+          <%= f.submit "Log Out", class: "font-valera field-button" %>
+        <% end %>
     </section>
   </aside>
 </div>
