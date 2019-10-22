@@ -70,6 +70,10 @@ select:not([multiple]) {
   min-height: 650px;
 }
 
+.my_profile_row {
+  min-height: 1100px;
+}
+
 .login-container {
   width: 300px;
   margin: 0 auto;
@@ -94,6 +98,32 @@ select:not([multiple]) {
   padding: 10px;
   background-color: #4bc2e3;
   color: white;
+}
+
+.button_to {
+  clear:both;
+  float: left;
+}
+
+.tag-button {
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 40px;
+  border: 3px solid #dddddd;
+  border-radius: 10px;
+  color: #999999;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.hidden_checkbox {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
+}
+
+.tag-button-no-float {
+  float: none;
 }
 
 .img-upload-btn {
