@@ -1,0 +1,3 @@
+class MyProfile < ApplicationRecord
+  
+end
