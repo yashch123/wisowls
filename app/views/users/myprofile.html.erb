@@ -8,7 +8,7 @@
   <script type='text/javascript'>
     function toggle_button(name) {
       if ($('.tag_btn_' + name).css('color') == "rgb(153, 153, 153)") {
-        $('.tag_btn_' + name).css('color', 'blue').css('border-color', 'blue');
+        $('.tag_btn_' + name).css('color', '#e6a53e').css('border-color', '#fcc369');
         $('.tag' + name + '_check').prop("checked", true);
       }
       else {
@@ -38,7 +38,7 @@
                  UPLOAD
                </label>
             
-               <%= f.file_field :image_url,id:"file-input" %>
+               <%= f.file_field :image_url, id: "file-input", accept: 'image/png,image/jpeg'%>
             </div>
 
         </div>
@@ -73,9 +73,16 @@
             <%= f.check_box :tag9, class: 'tag9_check hidden_checkbox' %>
             <%= f.check_box :tag10, class: 'tag10_check hidden_checkbox' %>
             <%= f.check_box :tag11, class: 'tag11_check hidden_checkbox' %>
-            
-            <br> <br> 
+            <%= f.check_box :taga, class: 'taga_check hidden_checkbox' %>
+            <%= f.check_box :tagb, class: 'tagb_check hidden_checkbox' %>
+            <%= f.check_box :tagc, class: 'tagc_check hidden_checkbox' %>
+            <%= f.check_box :tagd, class: 'tagd_check hidden_checkbox' %>
+            <%= f.check_box :tage, class: 'tage_check hidden_checkbox' %>
+            <%= f.check_box :tagf, class: 'tagf_check hidden_checkbox' %>
 
+            <br>
+            <%= f.label :traits, "I am..." %>
+            <br>
             <button type="button" onclick="toggle_button('1')" class='font-valera tag-button tag_btn_1'>Playful</button>
             <button type="button" onclick="toggle_button('2')" class='font-valera tag-button tag_btn_2'>Energetic</button>
             <button type="button" onclick="toggle_button('3')" class='font-valera tag-button tag_btn_3'>Friendly</button>
@@ -89,6 +96,17 @@
             <button type="button" onclick="toggle_button('11')" class='font-valera tag-button tag_btn_11'>Cat Friendly</button>
 
             <br> <br> 
+            
+            <%= f.label :lookingfor, "Looking for..." %>
+            <br>
+            <button type="button" onclick="toggle_button('a')" class='font-valera tag-button tag_btn_a'>Small Dogs</button>
+            <button type="button" onclick="toggle_button('b')" class='font-valera tag-button tag_btn_b'>Big Dogs</button>
+            <button type="button" onclick="toggle_button('c')" class='font-valera tag-button tag_btn_c'>Puppies</button>
+            <button type="button" onclick="toggle_button('d')" class='font-valera tag-button tag_btn_d'>A Soul Mate</button>
+            <button type="button" onclick="toggle_button('e')" class='font-valera tag-button tag_btn_e'>Younger Dogs</button>
+            <button type="button" onclick="toggle_button('f')" class='font-valera tag-button tag_btn_f'>Older Dogs</button>
+
+            <br> <br> <br>
 
           <%= f.submit "Save", class: "font-valera field-button", id: "profile_form_submit" %>
           <% end %>
