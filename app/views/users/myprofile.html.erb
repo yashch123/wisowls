@@ -29,8 +29,6 @@
 
       <div class="col">
         <div class="register-container-profile">
-          <%= form_with(model: @dog, local: true) do |f| %>
-            <%= f.label :profile %>
             <div class="upload-profile-pic"></div>
             
             <div class="image-upload">
@@ -38,7 +36,7 @@
                  UPLOAD
                </label>
             
-               <%= f.file_field :image_url, id: "file-input", accept: 'image/png,image/jpeg'%>
+              
             </div>
 
         </div>
@@ -47,46 +45,62 @@
       <div class="col">
         <div class="register-container-profile">
       
-            <%= f.label :dog_name %>
-            <%= f.text_field :dog_name, class: 'form-control field-input' %>
+
             
-            <label for="name">Name</label>
-            <input type="text" name="dog[name]" id="name" >
+            <label for="name">Dog Name</label>
+            <input type="text" name="dog[name]" id="name" class='form-control field-input'>
          
-            <%= f.label :age %>
-            <%= f.number_field :age, class: 'form-control field-input' %>
-            <label for="dog_age">Age</label>
-            <input type="number" name="dog[age]" id="dog_age">
+         
+        
+            <div class="field">
+              <label for="dog_age">Age</label>
+              <input type="number" name="dog[age]" id="dog_age" class='form-control field-input'>
+            </div>
             
-            <%= f.label :gender %>
-            <%= f.select :gender, options_for_select([["Select One", ""], "Male" , "Female"]), {}, { :class => 'field-input' } %>
-      
-            <%= f.label :breed %>
-            <%= f.text_field :breed, class: 'form-control field-input' %>
+
+            <div class="field">
+              <label for="dog_gender">Gender</label>
+              <!--<input type="input" name="dog[gender]" id="dog_gender">-->
+              
+              <select name="dog[gender]"  class="field-input">
+                <option disabled selected value value="Select One">Select One</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+
+            </div>
+  
+            <div class="field">
+              <label for="dog_breed">Breed</label>
+              <input type="text" name="dog[breed]" id="dog_breed" class='form-control field-input'>
+            </div>
     
-            <%= f.label :weight %>
-            <%= f.select :weight, options_for_select([["Select One", ""], "Less than 25 lbs" , "Between 25 lbs & 55 lbs", "Between 55 lbs & 100 lbs", "More than 100 lbs"]), {}, { :class => 'field-input' } %>
-      
-            <%= f.check_box :Playful, class: 'tag1_check hidden_checkbox' %>
-            <%= f.check_box :Energetic, class: 'tag2_check hidden_checkbox' %>
-            <%= f.check_box :Friendly, class: 'tag3_check hidden_checkbox' %>
-            <%= f.check_box :Calm, class: 'tag4_check hidden_checkbox' %>
-            <%= f.check_box :Affectionate, class: 'tag5_check hidden_checkbox' %>
-            <%= f.check_box :Cuddly, class: 'tag6_check hidden_checkbox' %>
-            <%= f.check_box :Intelligent, class: 'tag7_check hidden_checkbox' %>
-            <%= f.check_box :Curious, class: 'tag8_check hidden_checkbox' %>
-            <%= f.check_box :Sassy, class: 'tag9_check hidden_checkbox' %>
-            <%= f.check_box :child_friendly, class: 'tag10_check hidden_checkbox' %>
-            <%= f.check_box :cat_friendly, class: 'tag11_check hidden_checkbox' %>
-            <%= f.check_box :likes_small_dogs, class: 'taga_check hidden_checkbox' %>
-            <%= f.check_box :likes_big_dogs, class: 'tagb_check hidden_checkbox' %>
-            <%= f.check_box :likes_puppies, class: 'tagc_check hidden_checkbox' %>
-            <%= f.check_box :likes_soul_mate, class: 'tagd_check hidden_checkbox' %>
-            <%= f.check_box :likes_younger_dogs, class: 'tage_check hidden_checkbox' %>
-            <%= f.check_box :likes_older_dogs, class: 'tagf_check hidden_checkbox' %>
+    
+            <div class="field">
+              <label for="dog_weight">Weight</label>
+              <input type="number" name="dog[weight]" id="dog_weight" class='form-control field-input'>
+            </div>
+            
+
+  
+          <input type="checkbox" value="1" name="dog[playful]" id="dog_playful" class='tag1_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[energetic]" id="dog_energetic" class='tag2_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[friendly]" id="dog_friendly" class='tag3_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[calm]" id="dog_calm" class='tag4_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[barker]" id="dog_barker" class='tag5_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[child_friendly]" id="dog_child_friendly" class='tag10_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[cat_friendly]" id="dog_cat_friendly" class='tag11_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_small_dogs]" id="likes_small_dogs" class='taga_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_big_dogs]" id="likes_big_dogs" class='tagb_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_puppies]" id="likes_puppies" class='tagc_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_soul_mate]" id="likes_soul_mate" class='tagd_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_younger_dogs]" id="likes_younger_dogs" class='tage_check hidden_checkbox'/>
+          <input type="checkbox" value="1" name="dog[likes_older_dogs]" id="likes_older_dogs" class='tagf_check hidden_checkbox'/>
+
 
             <br>
-            <%= f.label :traits, "I am..." %>
+          
+            <label for="traits">I am...</label>
             <br>
             <button type="button" onclick="toggle_button('1')" class='font-valera tag-button tag_btn_1'>Playful</button>
             <button type="button" onclick="toggle_button('2')" class='font-valera tag-button tag_btn_2'>Energetic</button>
@@ -102,7 +116,7 @@
 
             <br> <br> 
             
-            <%= f.label :lookingfor, "Looking for..." %>
+             <label for="lookingfor">Looking for...</label>
             <br>
             <button type="button" onclick="toggle_button('a')" class='font-valera tag-button tag_btn_a'>Small Dogs</button>
             <button type="button" onclick="toggle_button('b')" class='font-valera tag-button tag_btn_b'>Big Dogs</button>
@@ -113,8 +127,6 @@
 
             <br> <br> <br>
 
-          <%= f.submit "Save", class: "font-valera field-button", id: "profile_form_submit" %>
-          <% end %>
           
         </div>
       </div>

@@ -21,8 +21,9 @@ class MyprofileController < ApplicationController
       # Never trust parameters from the scary internet, only allow the white list through.
     def dog_params
       # TODO: FIX THIS, CHECK PARAMS!
-      # params.require(:dog).permit(:name, :age, :gender, :breed, :weight, :cat_friendly, :child_friendly, :playful, :barker, :energetic, :calm, :friendly, :likes_small_dogs, :likes_big_dogs, :likes_puppies, :likes_older_dogs)
-      # params.require(:dog).permit(:name, :age)
+      params.require(:dog).permit(:name, :age, :gender, :breed, :weight, :cat_friendly, :child_friendly, :playful, :barker, :energetic, :calm, :friendly, :likes_small_dogs, :likes_big_dogs, :likes_puppies, :likes_older_dogs)
+      
+      #params.require(:dog).permit(:name, :age, :gender, :breed, :weight, :playful)
     end
  
  
