@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :dogs
   root 'pages#home'
   get 'sessions/new'
   get '/about', to: 'pages#about'
