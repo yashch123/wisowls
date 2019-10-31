@@ -19,7 +19,7 @@
   
   </script>
   <body class="background-blank">
-   <div class="h-100 row my_profile_row">
+   <div class="h-100 row my_profile_row" style="min-height: 1300px">
       <div class="font-satisfy" id="register-title"> Meet-Pup </div>
       
       <div class="col">
@@ -30,9 +30,8 @@
       <div class="col">
         <div class="register-container-profile">
           <%= form_with(model: @user, local: true) do |f| %>
-            <%= f.label :profile %>
+            <div style="height: 25px;"></div>
             <div class="upload-profile-pic"></div>
-            
             <div class="image-upload">
                <label for="file-input" class="font-valera img-upload-btn">
                  UPLOAD
@@ -45,7 +44,7 @@
       </div>
       
       <div class="col">
-        <div class="register-container-profile">
+        <div class="register-container-profile" style="padding-left: 15px; padding-right: 15px;">
       
             <%= f.label :name %>
             <%= f.text_field :dog_name, class: 'form-control field-input' %>

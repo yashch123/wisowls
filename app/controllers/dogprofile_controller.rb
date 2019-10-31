@@ -1,4 +1,4 @@
-class MyprofileController < ApplicationController
+class DogprofileController < ApplicationController
   
   def update
     # How to handle img_urL??
@@ -30,6 +30,6 @@ class MyprofileController < ApplicationController
 
     def user_params
       p "got here"
-      params.require(:myprofile).permit(:image_url)
+      params.require(:dogprofile).permit(:image_url)
     end
 end

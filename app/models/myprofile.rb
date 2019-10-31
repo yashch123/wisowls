@@ -1,3 +1,0 @@
-class MyProfile < ApplicationRecord
-  
-end
