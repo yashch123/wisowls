@@ -29,8 +29,8 @@
 
       <div class="col">
         <div class="register-container-profile">
-          <%= form_with(model: @user, local: true) do |f| %>
-            <div style="height: 25px;"></div>
+          <%= form_with(model: @dog, local: true) do |f| %>
+            <%= f.label :profile %>
             <div class="upload-profile-pic"></div>
             <div class="image-upload">
                <label for="file-input" class="font-valera img-upload-btn">
@@ -46,38 +46,43 @@
       <div class="col">
         <div class="register-container-profile" style="padding-left: 15px; padding-right: 15px;">
       
-            <%= f.label :name %>
+            <%= f.label :dog_name %>
             <%= f.text_field :dog_name, class: 'form-control field-input' %>
+            
+            <label for="name">Name</label>
+            <input type="text" name="dog[name]" id="name" >
          
             <%= f.label :age %>
-            <%= f.number_field :dog_age, class: 'form-control field-input' %>
+            <%= f.number_field :age, class: 'form-control field-input' %>
+            <label for="dog_age">Age</label>
+            <input type="number" name="dog[age]" id="dog_age">
             
             <%= f.label :gender %>
-            <%= f.select :dog_gender, options_for_select([["Select One", ""], "Male" , "Female"]), {}, { :class => 'field-input' } %>
+            <%= f.select :gender, options_for_select([["Select One", ""], "Male" , "Female"]), {}, { :class => 'field-input' } %>
       
             <%= f.label :breed %>
-            <%= f.text_field :dog_breed, class: 'form-control field-input' %>
+            <%= f.text_field :breed, class: 'form-control field-input' %>
     
             <%= f.label :weight %>
-            <%= f.select :dog_weight, options_for_select([["Select One", ""], "Less than 25 lbs" , "Between 25 lbs & 55 lbs", "Between 55 lbs & 100 lbs", "More than 100 lbs"]), {}, { :class => 'field-input' } %>
+            <%= f.select :weight, options_for_select([["Select One", ""], "Less than 25 lbs" , "Between 25 lbs & 55 lbs", "Between 55 lbs & 100 lbs", "More than 100 lbs"]), {}, { :class => 'field-input' } %>
       
-            <%= f.check_box :tag1, class: 'tag1_check hidden_checkbox' %>
-            <%= f.check_box :tag2, class: 'tag2_check hidden_checkbox' %>
-            <%= f.check_box :tag3, class: 'tag3_check hidden_checkbox' %>
-            <%= f.check_box :tag4, class: 'tag4_check hidden_checkbox' %>
-            <%= f.check_box :tag5, class: 'tag5_check hidden_checkbox' %>
-            <%= f.check_box :tag6, class: 'tag6_check hidden_checkbox' %>
-            <%= f.check_box :tag7, class: 'tag7_check hidden_checkbox' %>
-            <%= f.check_box :tag8, class: 'tag8_check hidden_checkbox' %>
-            <%= f.check_box :tag9, class: 'tag9_check hidden_checkbox' %>
-            <%= f.check_box :tag10, class: 'tag10_check hidden_checkbox' %>
-            <%= f.check_box :tag11, class: 'tag11_check hidden_checkbox' %>
-            <%= f.check_box :taga, class: 'taga_check hidden_checkbox' %>
-            <%= f.check_box :tagb, class: 'tagb_check hidden_checkbox' %>
-            <%= f.check_box :tagc, class: 'tagc_check hidden_checkbox' %>
-            <%= f.check_box :tagd, class: 'tagd_check hidden_checkbox' %>
-            <%= f.check_box :tage, class: 'tage_check hidden_checkbox' %>
-            <%= f.check_box :tagf, class: 'tagf_check hidden_checkbox' %>
+            <%= f.check_box :Playful, class: 'tag1_check hidden_checkbox' %>
+            <%= f.check_box :Energetic, class: 'tag2_check hidden_checkbox' %>
+            <%= f.check_box :Friendly, class: 'tag3_check hidden_checkbox' %>
+            <%= f.check_box :Calm, class: 'tag4_check hidden_checkbox' %>
+            <%= f.check_box :Affectionate, class: 'tag5_check hidden_checkbox' %>
+            <%= f.check_box :Cuddly, class: 'tag6_check hidden_checkbox' %>
+            <%= f.check_box :Intelligent, class: 'tag7_check hidden_checkbox' %>
+            <%= f.check_box :Curious, class: 'tag8_check hidden_checkbox' %>
+            <%= f.check_box :Sassy, class: 'tag9_check hidden_checkbox' %>
+            <%= f.check_box :child_friendly, class: 'tag10_check hidden_checkbox' %>
+            <%= f.check_box :cat_friendly, class: 'tag11_check hidden_checkbox' %>
+            <%= f.check_box :likes_small_dogs, class: 'taga_check hidden_checkbox' %>
+            <%= f.check_box :likes_big_dogs, class: 'tagb_check hidden_checkbox' %>
+            <%= f.check_box :likes_puppies, class: 'tagc_check hidden_checkbox' %>
+            <%= f.check_box :likes_soul_mate, class: 'tagd_check hidden_checkbox' %>
+            <%= f.check_box :likes_younger_dogs, class: 'tage_check hidden_checkbox' %>
+            <%= f.check_box :likes_older_dogs, class: 'tagf_check hidden_checkbox' %>
 
             <br>
             <%= f.label :traits, "I am..." %>
